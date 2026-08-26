@@ -6,8 +6,8 @@
 
 /*
  * ERI — Design system industriel.
- * Palette : acier sombre, béton, accent "soudure" (orange incandescent).
- * Toutes les couleurs sont en oklch et exposées comme tokens sémantiques.
+ * Palette "Papier & tampon" : fond blanc cassé, encre noire, accent rouille
+ * (assorti au badge officiel ERI). Tokens sémantiques en oklch.
  */
 
 @theme inline {
