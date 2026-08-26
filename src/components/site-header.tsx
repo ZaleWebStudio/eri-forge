@@ -19,13 +19,15 @@ export function SiteHeader() {
     <header className="fixed inset-x-0 top-0 z-50 border-b border-border/80 bg-background/85 backdrop-blur-md">
       <div className="eri-container flex h-16 items-center justify-between gap-4 md:h-20">
         <Link to="/" className="group -ml-1 flex items-center gap-3 md:-ml-2" onClick={() => setOpen(false)}>
-          <img
-            src={eriLogoBlack}
-            alt="Logo ERI — Entreprise Réalisation Industrielle"
-            width={255}
-            height={255}
-            className="size-11 translate-y-[2px] rounded-full md:size-14 md:translate-y-[3px]"
-          />
+          <span className="size-11 translate-y-[2px] overflow-hidden rounded-full md:size-14 md:translate-y-[3px]">
+            <img
+              src={eriLogoBlack}
+              alt="Logo ERI — Entreprise Réalisation Industrielle"
+              width={255}
+              height={255}
+              className="size-full -translate-x-[2px] scale-[1.06] object-cover"
+            />
+          </span>
           <span className="leading-none">
             <span className="block font-display text-2xl font-semibold tracking-[0.3em] md:text-3xl">
               ERI
