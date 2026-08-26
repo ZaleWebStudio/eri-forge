@@ -1,7 +1,7 @@
 import { Link } from "@tanstack/react-router";
 import { Menu, Phone, X } from "lucide-react";
 import { useState } from "react";
-import { eriLogoWhite } from "@/assets/eri-logo";
+import { eriLogoBlack } from "@/assets/eri-logo";
 import { company } from "@/content/eri";
 
 const nav = [
