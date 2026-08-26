@@ -1,7 +1,7 @@
-import logoBlackAsset from "./eri-logo-black.png.asset.json";
-import logoWhiteAsset from "./eri-logo-white.png.asset.json";
+import logoBlackUrl from "./eri-logo-black.png";
+import logoWhiteUrl from "./eri-logo-white.png";
 
 /** Badge officiel ERI — version noire (fonds clairs). */
-export const eriLogoBlack: string = logoBlackAsset.url;
+export const eriLogoBlack: string = logoBlackUrl;
 /** Badge officiel ERI — version blanche inversée (fonds sombres). */
-export const eriLogoWhite: string = logoWhiteAsset.url;
+export const eriLogoWhite: string = logoWhiteUrl;
