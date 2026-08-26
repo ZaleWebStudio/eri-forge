@@ -18,7 +18,7 @@ export function SiteHeader() {
   return (
     <header className="fixed inset-x-0 top-0 z-50 border-b border-border/80 bg-background/85 backdrop-blur-md">
       <div className="eri-container flex h-16 items-center justify-between gap-4 md:h-20">
-        <Link to="/" className="group flex items-center gap-3" onClick={() => setOpen(false)}>
+        <Link to="/" className="group -ml-1 flex items-center gap-3 md:-ml-2" onClick={() => setOpen(false)}>
           <img
             src={eriLogoBlack}
             alt="Logo ERI — Entreprise Réalisation Industrielle"
