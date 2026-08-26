@@ -1,4 +1,5 @@
 import { Link } from "@tanstack/react-router";
+import { eriLogoWhite } from "@/assets/eri-logo";
 import { company } from "@/content/eri";
 
 export function SiteFooter() {
