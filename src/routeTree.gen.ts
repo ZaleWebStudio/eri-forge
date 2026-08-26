@@ -10,33 +10,102 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as ContactRouteImport } from './routes/contact'
+import { Route as DevisRouteImport } from './routes/devis'
+import { Route as EntrepriseRouteImport } from './routes/entreprise'
+import { Route as RealisationsRouteImport } from './routes/realisations'
+import { Route as SavoirFaireRouteImport } from './routes/savoir-faire'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const ContactRoute = ContactRouteImport.update({
+  id: '/contact',
+  path: '/contact',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const DevisRoute = DevisRouteImport.update({
+  id: '/devis',
+  path: '/devis',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const EntrepriseRoute = EntrepriseRouteImport.update({
+  id: '/entreprise',
+  path: '/entreprise',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const RealisationsRoute = RealisationsRouteImport.update({
+  id: '/realisations',
+  path: '/realisations',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SavoirFaireRoute = SavoirFaireRouteImport.update({
+  id: '/savoir-faire',
+  path: '/savoir-faire',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/contact': typeof ContactRoute
+  '/devis': typeof DevisRoute
+  '/entreprise': typeof EntrepriseRoute
+  '/realisations': typeof RealisationsRoute
+  '/savoir-faire': typeof SavoirFaireRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/contact': typeof ContactRoute
+  '/devis': typeof DevisRoute
+  '/entreprise': typeof EntrepriseRoute
+  '/realisations': typeof RealisationsRoute
+  '/savoir-faire': typeof SavoirFaireRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/contact': typeof ContactRoute
+  '/devis': typeof DevisRoute
+  '/entreprise': typeof EntrepriseRoute
+  '/realisations': typeof RealisationsRoute
+  '/savoir-faire': typeof SavoirFaireRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/'
+  fullPaths:
+    | '/'
+    | '/contact'
+    | '/devis'
+    | '/entreprise'
+    | '/realisations'
+    | '/savoir-faire'
   fileRoutesByTo: FileRoutesByTo
-  to: '/'
-  id: '__root__' | '/'
+  to:
+    | '/'
+    | '/contact'
+    | '/devis'
+    | '/entreprise'
+    | '/realisations'
+    | '/savoir-faire'
+  id:
+    | '__root__'
+    | '/'
+    | '/contact'
+    | '/devis'
+    | '/entreprise'
+    | '/realisations'
+    | '/savoir-faire'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  ContactRoute: typeof ContactRoute
+  DevisRoute: typeof DevisRoute
+  EntrepriseRoute: typeof EntrepriseRoute
+  RealisationsRoute: typeof RealisationsRoute
+  SavoirFaireRoute: typeof SavoirFaireRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -48,11 +117,51 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/contact': {
+      id: '/contact'
+      path: '/contact'
+      fullPath: '/contact'
+      preLoaderRoute: typeof ContactRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/devis': {
+      id: '/devis'
+      path: '/devis'
+      fullPath: '/devis'
+      preLoaderRoute: typeof DevisRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/entreprise': {
+      id: '/entreprise'
+      path: '/entreprise'
+      fullPath: '/entreprise'
+      preLoaderRoute: typeof EntrepriseRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/realisations': {
+      id: '/realisations'
+      path: '/realisations'
+      fullPath: '/realisations'
+      preLoaderRoute: typeof RealisationsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/savoir-faire': {
+      id: '/savoir-faire'
+      path: '/savoir-faire'
+      fullPath: '/savoir-faire'
+      preLoaderRoute: typeof SavoirFaireRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  ContactRoute: ContactRoute,
+  DevisRoute: DevisRoute,
+  EntrepriseRoute: EntrepriseRoute,
+  RealisationsRoute: RealisationsRoute,
+  SavoirFaireRoute: SavoirFaireRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
