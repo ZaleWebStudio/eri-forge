@@ -24,7 +24,7 @@ export function SiteHeader() {
             alt="Logo ERI — Entreprise Réalisation Industrielle"
             width={255}
             height={255}
-            className="size-11 rounded-full md:size-14"
+            className="size-11 translate-y-[2px] rounded-full md:size-14 md:translate-y-[3px]"
           />
           <span className="leading-none">
             <span className="block font-display text-2xl font-semibold tracking-[0.3em] md:text-3xl">
