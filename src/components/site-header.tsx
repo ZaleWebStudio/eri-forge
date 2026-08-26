@@ -20,7 +20,7 @@ export function SiteHeader() {
       <div className="eri-container flex h-16 items-center justify-between gap-4 md:h-20">
         <Link to="/" className="group flex items-center gap-3" onClick={() => setOpen(false)}>
           <img
-            src={eriLogoWhite}
+            src={eriLogoBlack}
             alt="Logo ERI — Entreprise Réalisation Industrielle"
             width={255}
             height={255}
