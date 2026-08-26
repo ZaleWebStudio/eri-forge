@@ -6,8 +6,14 @@ export function SiteFooter() {
     <footer className="border-t border-border bg-card/60">
       <div className="eri-container grid gap-10 py-14 md:grid-cols-3">
         <div>
-          <p className="font-display text-2xl font-semibold tracking-[0.3em]">ERI</p>
-          <p className="mt-2 text-sm uppercase tracking-[0.18em] text-muted-foreground">
+          <img
+            src={eriLogoWhite}
+            alt="Logo ERI — Entreprise Réalisation Industrielle"
+            width={255}
+            height={255}
+            className="size-20 rounded-full"
+          />
+          <p className="mt-4 text-sm uppercase tracking-[0.18em] text-muted-foreground">
             Entreprise Réalisation Industrielle
           </p>
           <p className="mt-4 max-w-xs text-sm text-muted-foreground">
