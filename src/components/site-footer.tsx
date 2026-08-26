@@ -1,5 +1,5 @@
 import { Link } from "@tanstack/react-router";
-import { eriLogoWhite } from "@/assets/eri-logo";
+import { eriLogoBlack } from "@/assets/eri-logo";
 import { company } from "@/content/eri";
 
 export function SiteFooter() {
@@ -8,7 +8,7 @@ export function SiteFooter() {
       <div className="eri-container grid gap-10 py-14 md:grid-cols-3">
         <div>
           <img
-            src={eriLogoWhite}
+            src={eriLogoBlack}
             alt="Logo ERI — Entreprise Réalisation Industrielle"
             width={255}
             height={255}

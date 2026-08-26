@@ -84,7 +84,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
         content:
           "E R I — Entreprise Réalisation Industrielle : chaudronnerie et soudure à Loriol-du-Comtat, Vaucluse. 04 90 46 95 83.",
       },
-      { name: "theme-color", content: "#141619" },
+      { name: "theme-color", content: "#f4f2ec" },
       { property: "og:site_name", content: "E R I — Entreprise Réalisation Industrielle" },
       { property: "og:locale", content: "fr_FR" },
       { property: "og:type", content: "website" },
@@ -112,7 +112,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
 
 function RootShell({ children }: { children: ReactNode }) {
   return (
-    <html lang="en">
+    <html lang="fr">
       <head>
         <HeadContent />
       </head>

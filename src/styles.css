@@ -6,8 +6,8 @@
 
 /*
  * ERI — Design system industriel.
- * Palette : acier sombre, béton, accent "soudure" (orange incandescent).
- * Toutes les couleurs sont en oklch et exposées comme tokens sémantiques.
+ * Palette "Papier & tampon" : fond blanc cassé, encre noire, accent rouille
+ * (assorti au badge officiel ERI). Tokens sémantiques en oklch.
  */
 
 @theme inline {
@@ -42,36 +42,36 @@
 
 :root {
   --radius: 0.25rem;
-  --background: oklch(0.16 0.008 260);
-  --foreground: oklch(0.96 0.004 260);
-  --card: oklch(0.21 0.009 260);
-  --card-foreground: oklch(0.96 0.004 260);
-  --popover: oklch(0.21 0.009 260);
-  --popover-foreground: oklch(0.96 0.004 260);
-  --primary: oklch(0.71 0.176 51);
-  --primary-foreground: oklch(0.16 0.02 60);
-  --secondary: oklch(0.26 0.01 260);
-  --secondary-foreground: oklch(0.96 0.004 260);
-  --muted: oklch(0.26 0.01 260);
-  --muted-foreground: oklch(0.72 0.012 260);
-  --accent: oklch(0.3 0.012 260);
-  --accent-foreground: oklch(0.96 0.004 260);
-  --destructive: oklch(0.6 0.22 25);
-  --destructive-foreground: oklch(0.98 0.003 260);
-  --border: oklch(0.32 0.01 260);
-  --input: oklch(0.3 0.01 260);
-  --ring: oklch(0.71 0.176 51);
-  --steel: oklch(0.24 0.009 260);
-  --steel-foreground: oklch(0.9 0.006 260);
+  --background: oklch(0.955 0.008 95);
+  --foreground: oklch(0.18 0.006 60);
+  --card: oklch(0.995 0.003 95);
+  --card-foreground: oklch(0.18 0.006 60);
+  --popover: oklch(0.995 0.003 95);
+  --popover-foreground: oklch(0.18 0.006 60);
+  --primary: oklch(0.52 0.128 42);
+  --primary-foreground: oklch(0.97 0.006 95);
+  --secondary: oklch(0.925 0.012 90);
+  --secondary-foreground: oklch(0.18 0.006 60);
+  --muted: oklch(0.93 0.01 90);
+  --muted-foreground: oklch(0.46 0.015 60);
+  --accent: oklch(0.9 0.02 85);
+  --accent-foreground: oklch(0.18 0.006 60);
+  --destructive: oklch(0.55 0.2 27);
+  --destructive-foreground: oklch(0.97 0.005 90);
+  --border: oklch(0.86 0.012 85);
+  --input: oklch(0.85 0.012 85);
+  --ring: oklch(0.52 0.128 42);
+  --steel: oklch(0.9 0.015 90);
+  --steel-foreground: oklch(0.18 0.006 60);
 
   --gradient-steel: linear-gradient(
     160deg,
-    oklch(0.2 0.009 260) 0%,
-    oklch(0.16 0.008 260) 60%,
-    oklch(0.19 0.01 40) 100%
+    oklch(0.99 0.004 95) 0%,
+    oklch(0.955 0.008 95) 60%,
+    oklch(0.935 0.02 65) 100%
   );
-  --gradient-weld: linear-gradient(90deg, oklch(0.71 0.176 51), oklch(0.78 0.15 75));
-  --shadow-industrial: 0 24px 60px -30px oklch(0 0 0 / 0.85);
+  --gradient-weld: linear-gradient(90deg, oklch(0.52 0.128 42), oklch(0.6 0.14 52));
+  --shadow-industrial: 0 24px 60px -34px oklch(0.2 0.02 60 / 0.4);
 }
 
 @layer base {
@@ -124,8 +124,8 @@
 @utility eri-hatch {
   background-image: repeating-linear-gradient(
     135deg,
-    oklch(0.71 0.176 51 / 0.5) 0px,
-    oklch(0.71 0.176 51 / 0.5) 2px,
+    oklch(0.52 0.128 42 / 0.55) 0px,
+    oklch(0.52 0.128 42 / 0.55) 2px,
     transparent 2px,
     transparent 8px
   );
